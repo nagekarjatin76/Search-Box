@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.15.4/js/all.js"></script>
+
+
+
+    <title>Search</title>
+
+
+
+</head>
+
+<body>
+
+
+    <section class="container">
+
+        <form>
+            <i class="fas fa-search"  id="icon"></i>
+            <input type="text" name="" id="search-item" placeholder="Search product" onkeyup="search()">
+
+        </form>
+
+
+        <div class="product-list" id="product-list">
+
+            <div class="product">
+
+                <img src="https://cdn.shopify.com/s/files/1/1002/7150/products/New-Mockups---no-hanger---TShirt-Yellow.jpg?v=1639657077"
+                    alt="">
+                <div class="p-details">
+
+                    <h2>T-Shirt for Everyone</h2>
+                    <h3>₹399</h3>
+                </div>
+
+
+            </div>
+
+            <div class="product">
+
+                <img src="https://upload.wikimedia.org/wikipedia/commons/f/fa/Bally_Ascar_shoe.gif" alt="">
+                <div class="p-details">
+
+                    <h2>Sneker Shoes</h2>
+                    <h3>₹999</h3>
+                </div>
+
+
+            </div>
+
+
+
+            <div class="product">
+
+                <img src="https://cdn.shopify.com/s/files/1/0503/3728/4251/files/animation_gid.gif?v=1661227831&width=1500"
+                    alt="">
+                <div class="p-details">
+
+                    <h2>Puma Bag</h2>
+                    <h3>₹799</h3>
+                </div>
+
+
+            </div>
+
+            <div class="product">
+
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRpW0IuUYT7ZChrHdIkWMwp7h1cnE3u88s1xemyXqiZFFAv0WXjz8Hd8JVFcCYzKLD0NPs&usqp=CAU" alt="">
+                <div class="p-details">
+
+                    <h2>Victus laptop</h2>
+                    <h3>₹69,999</h3>
+                </div>
+
+
+            </div>
+
+            <div class="product">
+
+                <img src="https://content.asos-media.com/-/media/images/articles/men/2018/10/13-sat/top-10-tall-trousers/style-feed-thumb-top-10-tall-trousers-01.gif"
+                    alt="">
+                <div class="p-details">
+
+                    <h2>Formal pant</h2>
+                    <h3>₹769</h3>
+                </div>
+
+
+            </div>
+
+            <div class="product">
+
+                <img src="https://cdn.shopify.com/s/files/1/1684/4603/files/Redmi-note-8pro.gif?v=1580901899" alt="">
+                <div class="p-details">
+
+                    <h2>Redmi Note 8 pro</h2>
+                    <h3>₹17,999</h3>
+                </div>
+
+
+            </div>
+
+            <div class="product">
+
+                <img src="data:image/jpeg;base64,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"
+                    alt="">
+                <div class="p-details">
+
+                    <h2>Asusu tuf15</h2>
+                    <h3>₹65,000</h3>
+                </div>
+
+
+            </div>
+
+            <div class="product">
+
+                <img src="https://akm-img-a-in.tosshub.com/sites/visualstory/stories/2021_07/story_588/assets/5.gif?time=1625502497" alt="">
+                <div class="p-details">
+
+                    <h2>Gogles</h2>
+                    <h3>₹1999</h3>
+                </div>
+
+
+            </div>
+
+            <div class="product">
+
+                <img src="https://storage.googleapis.com/gweb-uniblog-publish-prod/original_images/Messages_2Ys4OlL.gif" alt="">
+                <div class="p-details">
+
+                    <h2>Smart Watch</h2>
+                    <h3>₹3999</h3>
+                </div>
+
+
+            </div>
+
+            <div class="product">
+
+                <img src="https://www.wyo.in/pub/media/catalog/product/c/u/custom-printed-t-shirt-wyo.gif" alt="">
+                <div class="p-details">
+
+                    <h2>T-Shirt </h2>
+                    <h3>₹567</h3>
+                </div>
+
+
+            </div>
+
+            <div class="product">
+
+                <img src="https://thumbs.gfycat.com/SomeEnormousAsiandamselfly-max-1mb.gif" alt="">
+                <div class="p-details">
+
+                    <h2>Shirt for man</h2>
+                    <h3>₹389</h3>
+                </div>
+
+
+            </div>
+
+
+            <div class="product">
+
+                <img src="https://5.imimg.com/data5/IL/WD/MY-35159448/men-s-plain-formal-shirt-500x500.jpg" alt="">
+                <div class="p-details">
+
+                    <h2>Shirt for Man</h2>
+                    <h3>₹459</h3>
+                </div>
+
+
+            </div>
+
+
+            <div class="product">
+
+                <img src="data:image/jpeg;base64,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"
+                    alt="">
+                <div class="p-details">
+
+                    <h2>Hoodies</h2>
+                    <h3>₹699</h3>
+                </div>
+
+
+
+
+
+
+            </div>
+
+    </section>
+
+
+
+
+
+    <script src="app.js"></script>
+</body>
+
+</html>
